@@ -1,6 +1,6 @@
 export async function buscarPorArtista(artist) {
     const res = await fetch(
-        `http://musicbrainz.org/ws/2/artist?query=${artist}&fmt=json`
+        `https://musicbrainz.org/ws/2/artist?query=${artist}&fmt=json`
     );
     return await res.json();
 }
@@ -14,7 +14,7 @@ export async function buscarAlbumsPorArtista(artistId) {
 
 export async function getAlbumCover(albumId) {
     const res = await fetch(
-        `http://coverartarchive.org/release-group/${albumId}`
+        `https://coverartarchive.org/release-group/${albumId}`
     );
     return await res.json();
 }
