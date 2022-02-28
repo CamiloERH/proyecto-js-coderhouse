@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <script src="https://kit.fontawesome.com/7d4e12bf26.js" crossorigin="anonymous"></script>
+        <title>Index</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="interface__options">
+                <button class="genericButton" id="changeColor"><i class="fa-solid fa-palette"></i></i><span class="tooltip">Tema</span></button>
+                <button class="genericButton" id="changeBackground"><i class="fa-solid fa-moon"></i></i><span class="tooltip">Fondo</span></button>
+            </div>  
+            <div id="content">
+                <aside>
+                    <h2>Busqueda por artista:</h2>
+                    <form id="searchArtistForm">
+                        <label for="artist">Artista</label>
+                        <input type="text" id="artistName" name="artistName" />
+
+                        <button id="buscarAlbumBtn" class="genericButton">Buscar</button>
+                    </form>
+
+                    <div id="sectionBusqueda">
+                        <h2>Resultados:</h2>
+                        <ul></ul>
+                    </div>
+                </aside>
+                <main>
+                    <div class="main__options">
+                        <button class="genericButton" id="busqueda"><i class="fa-solid fa-magnifying-glass"></i><span class="tooltip">Busqueda</span></button>
+                        <button class="genericButton" id="libreria"><i class="fa-solid fa-star"></i><span class="tooltip">Favoritos</span></button>
+                    </div>
+                    <div class="libreria__container">
+                        
+                    </div>
+                    <div class="libreria__container">
+
+                    </div>
+                </main>
+            </div>
+        </div>
+        <script type="module" src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/jquery.js"></script>
+    </body>
+</html>
