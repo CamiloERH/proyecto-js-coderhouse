@@ -10,10 +10,17 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
         <script src="https://kit.fontawesome.com/7d4e12bf26.js" crossorigin="anonymous"></script>
-        <title>Index</title>
+        <title>JS-CODERHOUSE</title>
     </head>
     <body>
         <div class="container">
+            <div id="modal">
+                <h2>Proyecto JS - CoderHouse</h2>
+                <p>La aplicación permite buscar albumes ingresando el nombre de un artista y añadirlos a favoritos. </p>
+                <button class="genericButton" id="modal__help"><i class="fa-solid fa-circle-info"></i><span class="tooltip"> Ver botones </span> Ver botones disponibles </button>
+                <button class="genericButton" id="modal__close"><i class="fa-solid fa-circle-xmark"></i><span class="tooltip">Cerrar modal.</span> Cerrar Modal /  <i class="fa-solid fa-arrow-right"></i> Continuar</button>
+                <label><input type="checkbox" id="checkbox"> No volver a mostrar</label>
+            </div>
             <div class="interface__options">
                 <button class="genericButton" id="changeColor"><i class="fa-solid fa-palette"></i></i><span class="tooltip">Tema</span></button>
                 <button class="genericButton" id="changeBackground"><i class="fa-solid fa-moon"></i></i><span class="tooltip">Fondo</span></button>
@@ -47,7 +54,7 @@
                 </main>
             </div>
         </div>
-        <script type="module" src="js/script.js"></script>
+        <script type="module" src="js/main.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="js/jquery.js"></script>
     </body>

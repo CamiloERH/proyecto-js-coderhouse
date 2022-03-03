@@ -25,14 +25,14 @@ $("#changeColor").on("click", () => {
 });
 
 let bool = false;
-const i = $("#changeBackground").children('i');
+const icon = $("#changeBackground").children('i');
 $("#changeBackground").on("click", () => {
     if(bool){
         $(":root").css("--background-color", "211, 222, 220");
-        i.attr('class', 'fa-solid fa-moon');
+        icon.attr('class', 'fa-solid fa-moon');
     } else {
         $(":root").css("--background-color", "0, 0, 0");
-        i.attr('class', 'fa-solid fa-sun')
+        icon.attr('class', 'fa-solid fa-sun')
     }
     bool = !bool;
 });
